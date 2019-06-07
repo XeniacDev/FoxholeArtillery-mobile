@@ -43,6 +43,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
    - assets/images/foxhole_artillery_bg.png
+   - assets/images/foxhole_artillery_bg_noFade.jpg
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -60,8 +61,11 @@ flutter:
     - family: Calibri
       fonts:
         - asset: assets/fonts/Calibri.ttf
+          weight: 300
         - asset: assets/fonts/CALIBRIB.ttf
+          weight: 500
         - asset: assets/fonts/CALIBRII.ttf
+          style: italic
         - asset: assets/fonts/CALIBRIZ.ttf
 
   #   - family: Trajan Pro

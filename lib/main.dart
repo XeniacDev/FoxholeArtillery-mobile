@@ -2,15 +2,18 @@ import 'package:flutter/material.dart';
 
 import 'HomeScreen.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return new MaterialApp(
       title: 'FoxholeArtillery',
-      theme: ThemeData(primarySwatch: Colors.green),
-      home: HomePage(),
+      theme: new ThemeData(
+        primarySwatch: Colors.green,
+        fontFamily: "Calibri"
+      ),
+      home: new HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -19,6 +22,9 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: HomeScreen());
+    return new Scaffold(
+      backgroundColor: Colors.black87,
+      body: new HomeScreen(),
+    );
   }
 }
