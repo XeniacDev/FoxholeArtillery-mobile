@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 
 import 'HomeScreen.dart';
 
@@ -7,10 +8,10 @@ void main() => runApp(new MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    FlutterStatusbarcolor.setStatusBarWhiteForeground(true);
     return new MaterialApp(
       title: 'FoxholeArtillery',
       theme: new ThemeData(
-        primarySwatch: Colors.green,
         fontFamily: "Calibri"
       ),
       home: new HomePage(),
@@ -23,7 +24,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      backgroundColor: Colors.black87,
+      backgroundColor: new Color(0xff191919),
       body: new HomeScreen(),
     );
   }
