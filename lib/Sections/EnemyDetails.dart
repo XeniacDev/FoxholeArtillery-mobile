@@ -10,17 +10,22 @@ class EnemyDetails extends StatefulWidget {
 class EnemyDetailsState extends State<EnemyDetails> {
   @override
   Widget build(BuildContext context) {
+
+    //a row with some padding to get enemy information from user
     return Padding(
       padding: const EdgeInsets.only(top: 10.0, left: 30.0, right: 30.0),
       child: new Column(children: <Widget>[
         new Row(
           children: <Widget>[
+            // To Enemy position text
             new Text("To Enemy Position",
                 style: new TextStyle(color: new Color(0xffEAEAEA)))
           ],
         ),
+
+        //first TextField to get enemy distance ===================================>>
         new Padding(
-          padding: const EdgeInsets.only(top: 8.0),
+          padding: const EdgeInsets.only(top: 5.0),
           child: new Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
@@ -49,9 +54,13 @@ class EnemyDetailsState extends State<EnemyDetails> {
                   ),
                 ),
               ),
+              // <<==================================================================
+
               new SizedBox(
                 width: 7,
               ),
+
+              //second TextField to get enemy azimuth ==================================>>
               new Expanded(
                 child: new Container(
                   padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -77,6 +86,7 @@ class EnemyDetailsState extends State<EnemyDetails> {
                   ),
                 ),
               )
+              // <<======================================================================
             ],
           ),
         )

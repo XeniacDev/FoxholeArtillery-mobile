@@ -12,7 +12,7 @@ class ArtilleryButtonsState extends State<ArtilleryButtons> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 30.0, right: 30.0, top: 3),
+      padding: const EdgeInsets.only(left: 30.0, right: 30.0),
       child: new Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[

@@ -15,25 +15,13 @@ class HeaderState extends State<Header> {
 
       //header image with a gradient on it.
       new Container(
-        foregroundDecoration: new BoxDecoration(
-            gradient: new LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Colors.transparent, new Color(0xff191919)]),
-            border:
-            new Border(bottom: BorderSide(color: new Color(0xff191919)))),
-        child: new Image.asset("assets/images/foxhole_artillery_bg_noFade.jpg"),
+        child: new Image.asset("assets/images/overlay_wallpaper.jpg"),
       ),
 
       //selected artillery type text
       new Container(
         padding:
-        const EdgeInsets.only(bottom: 20, top: 20, left: 30, right: 30),
-        decoration: new BoxDecoration(
-            gradient: new LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Colors.transparent, new Color(0xff191919)])),
+        const EdgeInsets.only(bottom: 17.5, left: 30, right: 30),
         child: new Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
