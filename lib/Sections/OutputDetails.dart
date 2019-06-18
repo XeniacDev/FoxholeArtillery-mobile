@@ -21,6 +21,7 @@ class OutputDetailsState extends State<OutputDetails> {
                   flex: 10,
                   child: new Column(
                     children: <Widget>[
+                      // outputs Titles ========================================>>
                       new Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: <Widget>[
@@ -32,11 +33,15 @@ class OutputDetailsState extends State<OutputDetails> {
                               new TextStyle(color: new Color(0xff737373),fontSize: 12))
                         ],
                       ),
+                      //<<==================================================
+
                       new Padding(
                         padding: const EdgeInsets.only(left:10.0),
                         child: new Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: <Widget>[
+
+                            //output numbers ================>>
                             new Row(
                               children: <Widget>[
                                 new Text("123"+"m",
@@ -50,6 +55,7 @@ class OutputDetailsState extends State<OutputDetails> {
                                 )
                               ],
                             )
+                            //<<============================
                           ],
                         ),
                       )
@@ -62,6 +68,8 @@ class OutputDetailsState extends State<OutputDetails> {
           new SizedBox(
           width: 10,
           ),
+
+          //Calculate Button to get user entered numbers from TextFields ==============================>>
           new Expanded(
             child: new Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -76,6 +84,7 @@ class OutputDetailsState extends State<OutputDetails> {
               ],
             ),
           )
+          // <<=================================================================================
         ],
       ),
     );

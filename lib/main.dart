@@ -10,9 +10,7 @@ class MyApp extends StatelessWidget {
     FlutterStatusbarcolor.setStatusBarWhiteForeground(true);
     return new MaterialApp(
       title: 'FoxholeArtillery',
-      theme: new ThemeData(
-        fontFamily: "Calibri"
-      ),
+      theme: new ThemeData(fontFamily: "Calibri"),
       home: new HomePage(),
       debugShowCheckedModeBanner: false,
     );
@@ -24,7 +22,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       backgroundColor: new Color(0xff191919),
-      body: new HomeScreen(),
+      //using SingleChildScrollView to push up TextFields when keyboard is open. (resizeToAvoidBottomInset doesn't work)
+      //resizeToAvoidBottomInset: true,
+      body: new SingleChildScrollView(child: new HomeScreen()),
     );
   }
 }
