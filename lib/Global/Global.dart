@@ -6,6 +6,11 @@ class Global {
   //Global instance of HomeScreen.dart root widget to use setState() from any place of program.
   static HomeScreenState homeScreen;
 
+  static Map<String,String > enemyCoordinates = {
+    "distance" : "0" ,
+    "azimuth" : "0"
+  };
+
   //to realize that what ArtilleryType is selected.
   static String whatSelected="";
   //list of ArtilleryType

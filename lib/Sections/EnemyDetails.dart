@@ -8,6 +8,26 @@ class EnemyDetails extends StatefulWidget {
 }
 
 class EnemyDetailsState extends State<EnemyDetails> {
+
+  static TextEditingController enemyDistanceController;
+  static TextEditingController enemyAzimuthController;
+
+
+  @override
+  void initState() {
+    super.initState();
+    enemyDistanceController = new TextEditingController();
+    enemyAzimuthController = new TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    enemyDistanceController.dispose();
+    enemyAzimuthController.dispose();
+    super.dispose();
+  }
+
+
   @override
   Widget build(BuildContext context) {
 
@@ -38,6 +58,7 @@ class EnemyDetailsState extends State<EnemyDetails> {
                       color: new Color(0xff121212),
                       borderRadius: BorderRadius.circular(5)),
                   child: new TextField(
+                    controller: enemyDistanceController,
                     keyboardType: TextInputType.numberWithOptions(signed: false,decimal: false),
                     inputFormatters: <TextInputFormatter>[
                       WhitelistingTextInputFormatter.digitsOnly
@@ -70,6 +91,7 @@ class EnemyDetailsState extends State<EnemyDetails> {
                       color: new Color(0xff121212),
                       borderRadius: BorderRadius.circular(5)),
                   child: new TextField(
+                    controller: enemyAzimuthController,
                     inputFormatters: <TextInputFormatter>[
                       WhitelistingTextInputFormatter.digitsOnly
                     ],

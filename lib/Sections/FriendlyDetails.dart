@@ -8,6 +8,25 @@ class FriendlyDetails extends StatefulWidget {
 }
 
 class FriendlyDetailsState extends State<FriendlyDetails> {
+
+  static TextEditingController friendlyDistanceController;
+  static TextEditingController friendlyAzimuthController;
+
+
+  @override
+  void initState() {
+    super.initState();
+    friendlyDistanceController = new TextEditingController();
+    friendlyAzimuthController = new TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    friendlyDistanceController.dispose();
+    friendlyAzimuthController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     //a row with some padding to get friendly information from user
@@ -37,6 +56,7 @@ class FriendlyDetailsState extends State<FriendlyDetails> {
                       color: new Color(0xff121212),
                       borderRadius: BorderRadius.circular(5)),
                   child: new TextField(
+                    controller: friendlyDistanceController,
                     keyboardType: TextInputType.numberWithOptions(
                         signed: false, decimal: false),
                     inputFormatters: <TextInputFormatter>[
@@ -70,6 +90,7 @@ class FriendlyDetailsState extends State<FriendlyDetails> {
                       color: new Color(0xff121212),
                       borderRadius: BorderRadius.circular(5)),
                   child: new TextField(
+                    controller: friendlyAzimuthController,
                     inputFormatters: <TextInputFormatter>[
                       WhitelistingTextInputFormatter.digitsOnly
                     ],

@@ -1,4 +1,8 @@
 import "package:flutter/material.dart";
+import 'package:foxhole_artillery/Sections/FriendlyDetails.dart';
+import 'package:foxhole_artillery/Sections/EnemyDetails.dart';
+import 'package:foxhole_artillery/Global/Global.dart';
+import "package:foxhole_artillery/Global/Calculators/Helper.dart";
 
 class OutputDetails extends StatefulWidget {
   @override
@@ -26,32 +30,33 @@ class OutputDetailsState extends State<OutputDetails> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: <Widget>[
                           new Text("DISTANCE",
-                              style:
-                              new TextStyle(color: new Color(0xff737373),fontSize: 12)),
+                              style: new TextStyle(
+                                  color: new Color(0xff737373), fontSize: 12)),
                           new Text("AZIMUTH",
-                              style:
-                              new TextStyle(color: new Color(0xff737373),fontSize: 12))
+                              style: new TextStyle(
+                                  color: new Color(0xff737373), fontSize: 12))
                         ],
                       ),
                       //<<==================================================
 
                       new Padding(
-                        padding: const EdgeInsets.only(left:10.0),
+                        padding: const EdgeInsets.only(left: 10.0),
                         child: new Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: <Widget>[
-
                             //output numbers ================>>
                             new Row(
                               children: <Widget>[
-                                new Text("123"+"m",
-                                    style:
-                                    new TextStyle(color: Colors.white,fontSize: 19)),
+                                new Text(
+                                    Global.enemyCoordinates["distance"].toString()+ "m",
+                                    style: new TextStyle(
+                                        color: Colors.white, fontSize: 19)),
                                 new Padding(
-                                  padding: const EdgeInsets.only(left:27.5),
-                                  child: new Text("123"+"deg",
-                                      style:
-                                      new TextStyle(color: Colors.white,fontSize: 19)),
+                                  padding: const EdgeInsets.only(left: 27.5),
+                                  child: new Text(
+                                      Global.enemyCoordinates["azimuth"].toString() + "°",
+                                      style: new TextStyle(
+                                          color: Colors.white, fontSize: 19)),
                                 )
                               ],
                             )
@@ -66,7 +71,7 @@ class OutputDetailsState extends State<OutputDetails> {
             ),
           ),
           new SizedBox(
-          width: 10,
+            width: 10,
           ),
 
           //Calculate Button to get user entered numbers from TextFields ==============================>>
@@ -75,11 +80,26 @@ class OutputDetailsState extends State<OutputDetails> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
                 new RaisedButton(
-                  onPressed: (){
+                  onPressed: () {
 
+                    Helper.currentRadioTitle = Global.whatSelected;
+
+                    Helper.calc_data(
+                        double.parse(
+                            EnemyDetailsState.enemyDistanceController.text),
+                        double.parse(
+                            EnemyDetailsState.enemyAzimuthController.text),
+                        double.parse(
+                            FriendlyDetailsState.friendlyDistanceController.text),
+                        double.parse(
+                            FriendlyDetailsState.friendlyAzimuthController.text));
+
+
+                    Global.homeScreen.setState(() => null);
                   },
                   color: new Color(0xffFFA32B),
-                  child: new Text("CALCULATE",style: new TextStyle(color: Colors.white)),
+                  child: new Text("CALCULATE",
+                      style: new TextStyle(color: Colors.white)),
                 )
               ],
             ),
