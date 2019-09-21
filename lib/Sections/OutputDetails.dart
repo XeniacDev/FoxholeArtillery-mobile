@@ -48,15 +48,20 @@ class OutputDetailsState extends State<OutputDetails> {
                             new Row(
                               children: <Widget>[
                                 new Text(
-                                    Global.enemyCoordinates["distance"].toString()+ "m",
+                                    Global.enemyCoordinates["distance"]
+                                            .toString() +
+                                        "m",
                                     style: new TextStyle(
                                         color: Colors.white, fontSize: 19)),
                                 new Padding(
                                   padding: const EdgeInsets.only(left: 27.5),
                                   child: new Text(
-                                      Global.enemyCoordinates["azimuth"].toString() + "°",
+                                      Global.enemyCoordinates["azimuth"]
+                                              .toString() +
+                                          "°",
                                       style: new TextStyle(
                                           color: Colors.white, fontSize: 19)),
+
                                 )
                               ],
                             )
@@ -80,22 +85,49 @@ class OutputDetailsState extends State<OutputDetails> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
                 new RaisedButton(
-                  onPressed: () {
-
+                  onPressed: () async {
                     Helper.currentRadioTitle = Global.whatSelected;
 
-                    Helper.calc_data(
-                        double.parse(
-                            EnemyDetailsState.enemyDistanceController.text),
-                        double.parse(
-                            EnemyDetailsState.enemyAzimuthController.text),
-                        double.parse(
-                            FriendlyDetailsState.friendlyDistanceController.text),
-                        double.parse(
-                            FriendlyDetailsState.friendlyAzimuthController.text));
-
-
-                    Global.homeScreen.setState(() => null);
+                    if (Helper.currentRadioTitle.isEmpty) {
+                      Scaffold.of(context).showSnackBar(new SnackBar(
+                        backgroundColor: new Color(0xff191919),
+                        content: new Text(Helper.errorList["artillerySelect"],
+                            style: new TextStyle(color: Colors.redAccent)),
+                        duration: new Duration(seconds: 3),
+                      ));
+                    } else if (EnemyDetailsState
+                            .enemyDistanceController.text.isEmpty ||
+                        EnemyDetailsState.enemyAzimuthController.text.isEmpty ||
+                        FriendlyDetailsState
+                            .friendlyDistanceController.text.isEmpty ||
+                        FriendlyDetailsState
+                            .friendlyAzimuthController.text.isEmpty) {
+                      Scaffold.of(context).showSnackBar(new SnackBar(
+                          backgroundColor: new Color(0xff191919),
+                          content: new Text(Helper.errorList["emptyFields"],
+                              style: new TextStyle(color: Colors.redAccent))));
+                    } else if (!Helper.isValid(
+                        EnemyDetailsState.enemyDistanceController.text,
+                        EnemyDetailsState.enemyAzimuthController.text,
+                        FriendlyDetailsState.friendlyDistanceController.text,
+                        FriendlyDetailsState.friendlyAzimuthController.text)) {
+                      Scaffold.of(context).showSnackBar(new SnackBar(
+                          backgroundColor: new Color(0xff191919),
+                          content: new Text(Helper.errorList["sameCoords"],
+                              style: new TextStyle(color: Colors.redAccent))));
+                    } else {
+                      Helper.calcData(
+                          double.parse(
+                              EnemyDetailsState.enemyDistanceController.text),
+                          double.parse(
+                              EnemyDetailsState.enemyAzimuthController.text),
+                          double.parse(
+                              FriendlyDetailsState.friendlyDistanceController.text),
+                          double.parse(
+                              FriendlyDetailsState.friendlyAzimuthController.text));
+                      Global.homeScreen.setState(() => null);
+                    }
+                    Helper.currentError = "";
                   },
                   color: new Color(0xffFFA32B),
                   child: new Text("CALCULATE",
