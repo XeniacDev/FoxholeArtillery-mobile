@@ -19,7 +19,7 @@ class OutputDetailsState extends State<OutputDetails> {
   @override
   Widget build(BuildContext context) {
     // top: 15, left: 30.0, right: 30.0
-    return Padding(
+    return new Padding(
       padding: EdgeInsets.only(
           top: 1.92 * SizeConfig.heightMultiplier,
           left: horizantalPaddingBy30,
@@ -33,61 +33,124 @@ class OutputDetailsState extends State<OutputDetails> {
               children: <Widget>[
                 new Expanded(
                   flex: 10,
-                  child: new Column(
-                    children: <Widget>[
-                      // outputs Titles ========================================>>
-                      new Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: <Widget>[
-                          new Text("DISTANCE",
+                  child: new DataTable(
+                    horizontalMargin: 0,
+                    headingRowHeight: 5,
+                    columnSpacing: 5,
+                    columns: [
+                      DataColumn(
+                          label: new Text("DISTANCE",
                               style: new TextStyle(
                                   color: new Color(0xff737373),
-                                  fontSize: fontSize12)), // 12
-                          new Text("AZIMUTH",
+                                  fontSize: fontSize12))),
+                      DataColumn(
+                          label: new Text("AZIMUTH",
                               style: new TextStyle(
                                   color: new Color(0xff737373),
-                                  fontSize: fontSize12)) // 12
-                        ],
-                      ),
-                      //<<==================================================
-
-                      new Padding(
-                        padding:
-                            EdgeInsets.only(left: horizantalPaddingBy10), // 10
-                        child: new Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: <Widget>[
-                            //output numbers ================>>
-                            new Row(
-                              children: <Widget>[
-                                new Text(
-                                    Global.enemyCoordinates["distance"]
-                                            .toString() +
-                                        "m",
-                                    style: new TextStyle(
-                                        color: Colors.white,
-                                        fontSize: fontSize19)), // 19
-                                new Padding(
-                                  padding: EdgeInsets.only(
-                                      left: 6.69 *
-                                          SizeConfig
-                                              .imageSizeMultiplier), // 27.5
-                                  child: new Text(
-                                      Global.enemyCoordinates["azimuth"]
-                                              .toString() +
-                                          "°",
-                                      style: new TextStyle(
-                                          color: Colors.white,
-                                          fontSize: fontSize19)), // 19
-                                )
-                              ],
-                            )
-                            //<<============================
-                          ],
+                                  fontSize: fontSize12)))
+                    ],
+                    rows: [
+                      DataRow(cells: [
+                        DataCell(
+                          new Text(
+                              Global.enemyCoordinates["distance"].toString() +
+                                  "m",
+                              style: new TextStyle(
+                                  color: Colors.white, fontSize: fontSize19)),
                         ),
-                      )
+                        DataCell(
+                          new Text(
+                              Global.enemyCoordinates["azimuth"].toString() +
+                                  "°",
+                              style: new TextStyle(
+                                  color: Colors.white, fontSize: fontSize19)),
+                        ),
+                      ])
                     ],
                   ),
+                  // child: new Column(
+                  //   crossAxisAlignment: CrossAxisAlignment.start,
+                  //   children: <Widget>[
+                  //     // outputs Titles ========================================>>
+
+                  //     // !Distance
+                  //     // new ListTile(
+                  //     //   title: new Text("DISTANCE",
+                  //     //       style: new TextStyle(
+                  //     //           color: new Color(0xff737373),
+                  //     //           fontSize: fontSize12)),
+                  //     //   subtitle: new Text(
+                  //     //       Global.enemyCoordinates["distance"].toString() +
+                  //     //           "m",
+                  //     //       style: new TextStyle(
+                  //     //           color: Colors.white, fontSize: fontSize19)),
+                  //     // ),
+
+                  //     // ! Azimuth
+                  //     // new ListTile(
+                  //     //   title: new Text("AZIMUTH",
+                  //     //       style: new TextStyle(
+                  //     //           color: new Color(0xff737373),
+                  //     //           fontSize: fontSize12)),
+                  //     //   subtitle: new Text(
+                  //     //       Global.enemyCoordinates["distance"].toString() +
+                  //     //           "m",
+                  //     //       style: new TextStyle(
+                  //     //           color: Colors.white, fontSize: fontSize19)),
+                  //     // ),
+
+                  //     // new Row(
+                  //     //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  //     //   children: <Widget>[
+                  //     //     new Text("DISTANCE",
+                  //     //         style: new TextStyle(
+                  //     //             color: new Color(0xff737373),
+                  //     //             fontSize: fontSize12)), // 12
+                  //     //     new Text("AZIMUTH",
+                  //     //         style: new TextStyle(
+                  //     //             color: new Color(0xff737373),
+                  //     //             fontSize: fontSize12)) // 12
+                  //     //   ],
+                  //     // ),
+                  //     // <<==================================================
+
+                  //     // new Padding(
+                  //     //   padding:
+                  //     //       EdgeInsets.only(left: horizantalPaddingBy10), // 10
+                  //     //   child: new Row(
+                  //     //     mainAxisAlignment: MainAxisAlignment.start,
+                  //     //     children: <Widget>[
+                  //     //       //output numbers ================>>
+                  //     //       new Row(
+                  //     //         children: <Widget>[
+                  //     //           new Text(
+                  //     //               Global.enemyCoordinates["distance"]
+                  //     //                       .toString() +
+                  //     //                   "m",
+                  //     //               style: new TextStyle(
+                  //     //                   color: Colors.white,
+                  //     //                   fontSize: fontSize19)), // 19
+                  //     //           new Padding(
+                  //     //             padding: EdgeInsets.only(
+                  //     //                 left: 6.69 *
+                  //     //                     SizeConfig
+                  //     //                         .imageSizeMultiplier), // 27.5
+                  //     //             child: new Text(
+                  //     //                 Global.enemyCoordinates["azimuth"]
+                  //     //                         .toString() +
+                  //     //                     "°",
+                  //     //                 style: new TextStyle(
+                  //     //                     color: Colors.white,
+                  //     //                     fontSize: fontSize19)), // 19
+                  //     //           )
+                  //     //         ],
+                  //     //       )
+                  //     //       //<<============================
+                  //     //     ],
+                  //     //   ),
+                  //     // )
+                  //   ],
+                  // ),
                 )
               ],
             ),
