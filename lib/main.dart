@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
+import 'package:foxhole_artillery/Theme/SizeConfig.dart';
 import 'HomeScreen.dart';
 
 void main() => runApp(new MyApp());
@@ -8,11 +9,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FlutterStatusbarcolor.setStatusBarWhiteForeground(true);
-    return new MaterialApp(
-      title: 'FoxholeArtillery',
-      theme: new ThemeData(fontFamily: "Calibri"),
-      home: new HomePage(),
-      debugShowCheckedModeBanner: false,
+    return new LayoutBuilder(
+      builder: (context, constraints) {
+        return new OrientationBuilder(
+          builder: (context, orientation) {
+            new SizeConfig().int(constraints, orientation);
+            return new MaterialApp(
+              title: 'FoxholeArtillery',
+              theme: new ThemeData(fontFamily: "Calibri"),
+              home: new HomePage(),
+              debugShowCheckedModeBanner: false,
+            );
+          },
+        );
+      },
     );
   }
 }

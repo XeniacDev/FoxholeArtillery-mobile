@@ -82,7 +82,7 @@ class Helper {
   }
 
   // use this for data validation
-   static IsValid(enemyDisValue,enemyAzimValue,friendlyDisValue,friendlyAzimValue) {
+   static isValid(enemyDisValue,enemyAzimValue,friendlyDisValue,friendlyAzimValue) {
 
     var isValid = true;
     // Conditions
@@ -94,7 +94,7 @@ class Helper {
     return isValid;
   }
 
-   static calc_data (e_dist, e_azi, f_dist, f_azi) {
+   static calcData (e_dist, e_azi, f_dist, f_azi) {
     var a_delt;
     var r_dist ;
     var a_step ;
