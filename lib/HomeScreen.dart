@@ -13,7 +13,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class HomeScreenState extends State<HomeScreen> {
-  double horizantalPaddingBy30 = 7.29 * SizeConfig.imageSizeMultiplier;
+  double horizantalPaddingBy30 = 7.29 * SizeConfig.imageSizeMultiplier; // 30
 
   //root widget for home screen
   @override
@@ -31,8 +31,8 @@ class HomeScreenState extends State<HomeScreen> {
               new Header(),
               new ArtilleryButtons(),
               new Padding(
+                // left:30.0, right: 30.0,top: 15
                 padding: EdgeInsets.only(
-                    // left:30.0, right: 30.0,top: 15
                     left: horizantalPaddingBy30,
                     right: horizantalPaddingBy30,
                     top: 1.88 * SizeConfig.heightMultiplier),
