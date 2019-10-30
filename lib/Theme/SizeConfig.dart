@@ -1,6 +1,13 @@
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
+/*
+! Notice
+  I'm using Pixel 3 XL as the main device for configing the block sizes:
+  Vertical Block Size: 7.977142857142857
+  Horizontal Block Size: 4.114285714285715
+*/
+
 class SizeConfig {
   static double _screenWidth;
   static double _screenHeight;
@@ -26,7 +33,7 @@ class SizeConfig {
     imageSizeMultiplier = _blockSizeHorizontal;
     heightMultiplier = _blockSizeVertical;
 
-    print('Block Size Vertical: ' + _blockSizeVertical.toString());
-    print('Block Size Horizontal: ' + _blockSizeHorizontal.toString());
+    print('Vertical Block Size: ' + _blockSizeVertical.toString());
+    print('Horizontal Block Size: ' + _blockSizeHorizontal.toString());
   }
 }

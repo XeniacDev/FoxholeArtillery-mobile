@@ -8,7 +8,7 @@ class ArtilleryButtons extends StatefulWidget {
 
 class ArtilleryButtonsState extends State<ArtilleryButtons> {
   //widget class for artillery types buttons
-  //TODO: Use MediaQuery and Use Color Class
+  // TODO: Use Color Class
   @override
   Widget build(BuildContext context) {
     return Padding(
