@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
             new SizeConfig().int(constraints, orientation);
             return new MaterialApp(
               title: 'FoxholeArtillery',
-              theme: new ThemeData(fontFamily: "Calibri"),
+              theme: new ThemeData(
+                  fontFamily: "Calibri", dividerColor: new Color(0xff191919)),
               home: new HomePage(),
               debugShowCheckedModeBanner: false,
             );
