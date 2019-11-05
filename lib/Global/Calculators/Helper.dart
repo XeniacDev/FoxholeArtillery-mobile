@@ -149,16 +149,16 @@ class Helper {
     switch (Artilleryobject) {
       case "Field Artillery":
       case "GunShip":
-        var intDistance = floatDistance.floor();
+        var intDistance = floatDistance.round();
         // get next and previous number
         var nextNumber = intDistance + 1;
 
         if((floatDistance - intDistance) < (nextNumber - floatDistance)){
           // close to previous number
-          result = floatDistance.floor();
+          result = floatDistance.round();
         }
         else {
-          result = floatDistance.floor();
+          result = floatDistance.round();
         }
         break;
       case "Howitzer":
