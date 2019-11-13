@@ -32,8 +32,6 @@ class Helper {
   }
 
   static floatNumbersRounding(number) {
-    print('=========== floatNumbersRounding =============');
-    print('====== floatNumbersRounding number ' + number.toString());
     var result = 0;
     var placeholder;
 
@@ -45,8 +43,6 @@ class Helper {
     int numberFloatPart = int.parse(numberSplitterList[1]);
 
     if (numberFloatPart != 5) {
-      print('========= too IF e =======');
-      print('=== numberFloatPart ==: ' + numberFloatPart.toString());
       result = roundNumbersByFive(numberFloatPart);
       if (result == 10) {
         result = int.parse(placeholder[0]);
@@ -55,8 +51,7 @@ class Helper {
         if (result == 5) {
           // convert array to number
           String placeholderIntNumber = placeholder[0].toString();
-          print('===== placeholderIntNumber ==== : ' +
-              placeholderIntNumber.toString());
+
           return double.parse((placeholderIntNumber + '.' + result.toString()));
         } else {
           return int.parse(placeholder[0]);
@@ -133,22 +128,17 @@ class Helper {
         }
       }
 
-      print(r_azi);
-      print(r_azi.round());
-      print(convert_angle(r_azi.round()));
-
       r_azi = convert_angle(r_azi.round()).toDouble();
 
       // check if dis is higher than maxRange || minRange
       // ..
-      print("======== r_dist: " + r_dist.toString());
+
       WriteResults(r_dist, r_azi);
     }
   }
 
   // we use this class to show best coords as possbile
   static correctedDistance(distance, Artilleryobject) {
-    print("===Artilleryobject: " + Artilleryobject.toString());
     var result;
     var floatDistance = distance;
     floatDistance = double.parse(distance.toStringAsFixed(1));
