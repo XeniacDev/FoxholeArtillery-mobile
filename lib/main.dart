@@ -3,7 +3,11 @@ import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 import 'package:foxhole_artillery/Theme/SizeConfig.dart';
 import 'HomeScreen.dart';
 
-void main() => runApp(new MyApp());
+// void main() => runApp(new MyApp());
+void main(List<String> args) {
+  runApp(new MyApp());
+  print('=============== NEW APP ============');
+}
 
 class MyApp extends StatelessWidget {
   @override
