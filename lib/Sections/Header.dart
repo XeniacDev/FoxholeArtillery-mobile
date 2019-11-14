@@ -11,7 +11,6 @@ class HeaderState extends State<Header> {
   double horizantalPaddingBy30 = 7.29 * SizeConfig.imageSizeMultiplier; // 30
 
   //header image and the text on it
-  //TODO: Use Color Class
   @override
   Widget build(BuildContext context) {
     return new Stack(alignment: Alignment.bottomCenter, children: [

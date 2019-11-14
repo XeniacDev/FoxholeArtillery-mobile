@@ -14,7 +14,6 @@ class ArtilleryButtonsState extends State<ArtilleryButtons> {
   double buttonImageWidth = 12.77 * SizeConfig.imageSizeMultiplier; // 52.5
   double buttonImageHeight = 6.58 * SizeConfig.heightMultiplier; // 52.5
   //widget class for artillery types buttons
-  // TODO: Use Color Class
   @override
   Widget build(BuildContext context) {
     return Padding(
