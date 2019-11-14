@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
               theme: new ThemeData(
                 fontFamily: "Calibri",
                 dividerColor: new Color(0xff191919),
+                primaryColor: new Color(0xff191919),
               ),
               home: new HomePage(),
               debugShowCheckedModeBanner: false,
@@ -45,10 +46,7 @@ class HomePage extends StatelessWidget {
       //resizeToAvoidBottomInset: true,
       bottomNavigationBar: BottomAppBar(
         color: Colors.transparent,
-        child: new Container(
-          padding: EdgeInsets.symmetric(
-              vertical: 2.50 * SizeConfig.heightMultiplier), // 20
-          child: new Row(
+        child: new Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new RawMaterialButton(
@@ -67,7 +65,6 @@ class HomePage extends StatelessWidget {
               )
             ],
           ),
-        ),
         elevation: 0,
       ),
       body: new SingleChildScrollView(child: new HomeScreen()),
