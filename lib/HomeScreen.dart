@@ -26,6 +26,9 @@ class HomeScreenState extends State<HomeScreen> {
       alignment: Alignment.topCenter,
       children: <Widget>[
         new SafeArea(
+            child: new GestureDetector(
+          // To drop down the keyboard when the screen
+          onTap: () => FocusScope.of(context).unfocus(),
           child: new Column(
             children: <Widget>[
               new Header(),
@@ -51,7 +54,7 @@ class HomeScreenState extends State<HomeScreen> {
               new OutputDetails()
             ],
           ),
-        )
+        ))
       ],
     );
   }
