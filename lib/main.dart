@@ -5,10 +5,7 @@ import 'HomeScreen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // void main() => runApp(new MyApp());
-void main(List<String> args) {
-  runApp(new MyApp());
-  print('=============== NEW APP ============');
-}
+void main(List<String> args) => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -47,24 +44,24 @@ class HomePage extends StatelessWidget {
       bottomNavigationBar: BottomAppBar(
         color: Colors.transparent,
         child: new Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              new RawMaterialButton(
-                shape: const StadiumBorder(),
-                splashColor: Color(0xff191919),
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 0.41 * 4.11), //10
-                  child: new Text('Developed by ❤️ Xeniac',
-                      style: new TextStyle(
-                        fontFamily: 'Calibri',
-                        color: Color(0xff979797),
-                        fontSize: fontSize12,
-                      )),
-                ),
-                onPressed: _onPressed,
-              )
-            ],
-          ),
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new RawMaterialButton(
+              shape: const StadiumBorder(),
+              splashColor: Color(0xff191919),
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 0.41 * 4.11), //10
+                child: new Text('Made with ❤️ in Xeniac',
+                    style: new TextStyle(
+                      fontFamily: 'Calibri',
+                      color: Color(0xff979797),
+                      fontSize: fontSize12,
+                    )),
+              ),
+              onPressed: _onPressed,
+            )
+          ],
+        ),
         elevation: 0,
       ),
       body: new SingleChildScrollView(child: new HomeScreen()),
