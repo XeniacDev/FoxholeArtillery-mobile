@@ -6,8 +6,6 @@
 
 Simply click which weapon you're using then input the dist/azm from yourself to the weapon, then the dist/azm to the target and an accurate firing solution will be displayed.
 
-<br>
-
 ## Features:
 • User friendly UI
 <br>
@@ -17,17 +15,11 @@ Simply click which weapon you're using then input the dist/azm from yourself to 
 <br>
 • All fre and Open-source
 
-<br>
-
 ## Used languages:
-- Dart
-
-<br>
+- <a href="https://dart.dev/">Dart</a>
 
 ## Used Framework:
-- Flutter
-
-<br>
+- <a href="https://flutter.dev/">Flutter</a>
 
 ## Screenshots
 <center>
