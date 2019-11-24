@@ -17,10 +17,10 @@ Simply click which weapon you're using then input the dist/azm from yourself to 
 
 
 ## Used languages:
-- <a href="https://dart.dev/">Dart</a>
+- <a href="https://dart.dev/" target="_blank">Dart</a>
 
 ## Used Framework:
-- <a href="https://flutter.dev/">Flutter</a>
+- <a href="https://flutter.dev/" target="_blank">Flutter</a>
 
 ## Screenshots
 <center>
@@ -37,15 +37,15 @@ Simply click which weapon you're using then input the dist/azm from yourself to 
 ## Download
 <div>
 <a 
-   href="https://play.google.com/store/apps/details?id=com.xeniac.foxhole_artillery/">
+   href="https://play.google.com/store/apps/details?id=com.xeniac.foxhole_artillery/" target="_blank">
    <img alt="Google Play" src="http://s6.picofile.com/file/8379508800/DF_GooglePlay.png"
    width=200" height="59">
 </a>                    
 <a
-   href="https://Xeniac.ir/">
+   href="https://Xeniac.ir/" target="_blank">
    <img alt="App Store" src="http://s6.picofile.com/file/8379508834/DF_AppStore.png"
    width=200" height="59">
 </a>
 <div/>
 <br> OR
-<a href="https://github.com/irxeniac/FoxholeArtillery-Android/releases/">Download from Github</a>
+<a href="https://github.com/irxeniac/FoxholeArtillery-Android/releases/" target="_blank">Download from Github</a>
