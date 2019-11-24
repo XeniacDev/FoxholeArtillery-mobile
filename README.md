@@ -1,6 +1,6 @@
 <img alt="Icon" src="assets/images/foxhole_icon.png?raw=true" width="200" height="200" align="left" hspace="1" vspace="1">
 
-# SoundBox
+# Foxhole artillery
 
 > A simplistic calculator for using howitzers, field artillery, gunboats, and mortars in foxhole game.
 
@@ -13,7 +13,7 @@ Simply click which weapon you're using then input the dist/azm from yourself to 
 <br>
 • No annoying ads
 <br>
-• All fre and Open-source
+• All free and Open-source
 
 ## Used languages:
 - <a href="https://dart.dev/">Dart</a>
