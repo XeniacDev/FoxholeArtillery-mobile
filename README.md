@@ -37,7 +37,7 @@ Simply click which weapon you're using then input the dist/azm from yourself to 
 ## Download
 <div>
 <a 
-   href="https://play.google.com/store/apps/details?id=com.xeniac.foxhole_artillery/" target="_blank">
+   href="https://play.google.com/store/apps/details?id=com.xeniac.foxhole_artillery" target="_blank">
    <img alt="Google Play" src="http://s6.picofile.com/file/8379508800/DF_GooglePlay.png"
    width=200" height="59">
 </a>                    
