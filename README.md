@@ -6,18 +6,28 @@
 
 Simply click which weapon you're using then input the dist/azm from yourself to the weapon, then the dist/azm to the target and an accurate firing solution will be displayed.
 
+<br>
+
 ## Features:
 • User friendly UI
+<br>
 • Easy to use
+<br>
 • No annoying ads
+<br>
 • All fre and Open-source
 
+<br>
 
 ## Used languages:
 - Dart
 
+<br>
+
 ## Used Framework:
 - Flutter
+
+<br>
 
 ## Screenshots
 <center>
@@ -29,6 +39,7 @@ Simply click which weapon you're using then input the dist/azm from yourself to 
 <div/>
 <center/>
 
+<br>
 
 ## Download
 <div>
@@ -43,5 +54,5 @@ Simply click which weapon you're using then input the dist/azm from yourself to 
    width=200" height="59">
 </a>
 <div/>
-<br>
+<br> OR
 <a href="https://github.com/irxeniac/FoxholeArtillery-Android/releases/">Download from Github</a>
