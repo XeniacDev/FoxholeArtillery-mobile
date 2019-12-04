@@ -49,7 +49,7 @@
 	<string>xeniac.ir</string>
 	<key>CFBundleURLSchemes</key>
 	<array>
-	<string>poc</string>
+	<string>https</string>
 	</array>
 	</dict>
 	</array>
