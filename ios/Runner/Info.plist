@@ -40,17 +40,6 @@
 	<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<key>CFBundleURLTypes</key>
-	<array>
-	<dict>
-	<key>CFBundleTypeRole</key>
-	<string>Editor</string>
-	<key>CFBundleURLName</key>
-	<string>xeniac.ir</string>
-	<key>CFBundleURLSchemes</key>
-	<array>
-	<string>https</string>
-	</array>
 	</dict>
 	</array>
 	<false/>
