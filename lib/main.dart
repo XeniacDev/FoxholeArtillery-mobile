@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 import 'package:foxhole_artillery/Theme/SizeConfig.dart';
+import 'package:foxhole_artillery/Theme/Theme.dart';
 import 'HomeScreen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -18,14 +19,7 @@ class MyApp extends StatelessWidget {
             new SizeConfig().int(constraints, orientation);
             return new MaterialApp(
               title: 'FoxholeArtillery',
-              theme: new ThemeData(
-                fontFamily: "Calibri",
-                dividerColor: new Color(0xff191919),
-                primaryColor: new Color(0xff191919),
-                accentColor: new Color(0xffFFA32B),
-                textSelectionColor: new Color(0xffFFA32B),
-                textSelectionHandleColor: new Color(0xffFFA32B),
-              ),
+              theme: appTheme,
               home: new HomePage(),
               debugShowCheckedModeBanner: false,
             );
