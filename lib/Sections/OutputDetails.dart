@@ -52,18 +52,27 @@ class OutputDetailsState extends State<OutputDetails> {
                     rows: [
                       DataRow(cells: [
                         DataCell(
-                          new Text(
-                              Global.enemyCoordinates["distance"].toString() +
-                                  "m",
-                              style: new TextStyle(
-                                  color: Colors.white, fontSize: fontSize19)),
+                          new SelectableText(
+                            Global.enemyCoordinates["distance"].toString() +
+                                "m",
+                            style: new TextStyle(
+                                color: Colors.white, fontSize: fontSize19),
+                            showCursor: true,
+                            cursorWidth: 1,
+                            cursorColor: Color(0xffFFA32B),
+                            toolbarOptions: ToolbarOptions(copy: true),
+                          ),
                         ),
                         DataCell(
-                          new Text(
-                              Global.enemyCoordinates["azimuth"].toString() +
-                                  "°",
-                              style: new TextStyle(
-                                  color: Colors.white, fontSize: fontSize19)),
+                          new SelectableText(
+                            Global.enemyCoordinates["azimuth"].toString() + "°",
+                            style: new TextStyle(
+                                color: Colors.white, fontSize: fontSize19),
+                            showCursor: true,
+                            cursorWidth: 1,
+                            cursorColor: Color(0xffFFA32B),
+                            toolbarOptions: ToolbarOptions(copy: true),
+                          ),
                         ),
                       ])
                     ],
