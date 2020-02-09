@@ -62,7 +62,7 @@ class ArtilleryButtonsState extends State<ArtilleryButtons> {
                 child: new Container(
                     width: buttonImageWidth, // 52.5
                     height: buttonImageHeight, // 52.5
-                    child: new Image.asset("assets/images/gunship_icon.png"))),
+                    child: new Image.asset("assets/images/gunboat_icon.png"))),
           ),
 
           ////Howitzer Button
