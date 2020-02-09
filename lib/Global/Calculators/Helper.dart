@@ -146,7 +146,7 @@ class Helper {
     switch (Artilleryobject) {
       case "Field Artillery":
 
-      case "GunShip":
+      case "Gunboat":
         var intDistance = floatDistance.round();
         // get next and previous number
         var nextNumber = intDistance + 1;
@@ -186,13 +186,13 @@ class Helper {
         targetRangeChecker(
             correctCoordinates, artilleryRanges["Field Artillery"]);
         break;
-      case "GunShip":
+      case "Gunboat":
         correctCoordinates = correctedDistance(
           resultDistance,
           // send arty-type data for calculate the distance for each arty
           currentRadioTitle,
         );
-        targetRangeChecker(correctCoordinates, artilleryRanges["GunShip"]);
+        targetRangeChecker(correctCoordinates, artilleryRanges["Gunboat"]);
         break;
       case "Howitzer":
         correctCoordinates = correctedDistance(
@@ -228,7 +228,7 @@ class Helper {
       "MinRange": 75,
       "MaxRange": 150,
     },
-    "GunShip": {
+    "Gunboat": {
       "MinRange": 50,
       "MaxRange": 100,
     },

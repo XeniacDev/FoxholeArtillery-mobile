@@ -44,16 +44,16 @@ class ArtilleryButtonsState extends State<ArtilleryButtons> {
             ),
           ),
 
-          //GunShip Button
+          //Gunboat Button
           new GestureDetector(
             onTap: () {
-              Global.handleSelection("GunShip");
+              Global.handleSelection("Gunboat");
             },
             child: new Container(
                 alignment: Alignment.center,
                 decoration: new BoxDecoration(
                     //to change the bgColor if selected or not.
-                    color: Global.artilleryItems["GunShip"]
+                    color: Global.artilleryItems["Gunboat"]
                         ? new Color(0xffFFA32B)
                         : new Color(0xff121212),
                     borderRadius: BorderRadius.all(Radius.circular(5))),
