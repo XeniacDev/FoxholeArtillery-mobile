@@ -1,5 +1,5 @@
 name: foxhole_artillery
-description: FoxholeArtillery
+description: Foxhole artillery | A simplistic calculator for using howitzers, field artillery, gunboats, and mortars in Foxhole game.
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -11,7 +11,7 @@ description: FoxholeArtillery
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 1.0.2+4
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -34,7 +34,11 @@ dev_dependencies:
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/images/foxhole_icon.png"
+  # image_path: "assets/images/foxhole_icon.png"
+  image_path_android: "assets/images/foxhole_icon.png"
+  image_path_ios: "assets/images/foxhole_icon.png"
+  adaptive_icon_foreground: "assets/images/foxhole_foreground_icon.png"
+  adaptive_icon_background: "#000000"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec

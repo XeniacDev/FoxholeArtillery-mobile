@@ -44,16 +44,16 @@ class ArtilleryButtonsState extends State<ArtilleryButtons> {
             ),
           ),
 
-          //GunShip Button
+          //Gunboat Button
           new GestureDetector(
             onTap: () {
-              Global.handleSelection("GunShip");
+              Global.handleSelection("Gunboat");
             },
             child: new Container(
                 alignment: Alignment.center,
                 decoration: new BoxDecoration(
                     //to change the bgColor if selected or not.
-                    color: Global.artilleryItems["GunShip"]
+                    color: Global.artilleryItems["Gunboat"]
                         ? new Color(0xffFFA32B)
                         : new Color(0xff121212),
                     borderRadius: BorderRadius.all(Radius.circular(5))),
@@ -62,7 +62,7 @@ class ArtilleryButtonsState extends State<ArtilleryButtons> {
                 child: new Container(
                     width: buttonImageWidth, // 52.5
                     height: buttonImageHeight, // 52.5
-                    child: new Image.asset("assets/images/gunship_icon.png"))),
+                    child: new Image.asset("assets/images/gunboat_icon.png"))),
           ),
 
           ////Howitzer Button
