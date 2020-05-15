@@ -69,12 +69,6 @@ flutter:
     - family: Calibri
       fonts:
         - asset: assets/fonts/Calibri.ttf
-          weight: 300
-        - asset: assets/fonts/CALIBRIB.ttf
-          weight: 500
-        - asset: assets/fonts/CALIBRII.ttf
-          style: italic
-        - asset: assets/fonts/CALIBRIZ.ttf
-  #
+  
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
