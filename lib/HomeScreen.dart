@@ -26,32 +26,39 @@ class HomeScreenState extends State<HomeScreen> {
       alignment: Alignment.topCenter,
       children: <Widget>[
         new SafeArea(
+            child: new GestureDetector(
+          // To drop down the keyboard when the screen
+          onTap: () => FocusScope.of(context).unfocus(),
           child: new Column(
             children: <Widget>[
-              new Header(),
-              new ArtilleryButtons(),
-              new Padding(
-                // left:30.0, right: 30.0,top: 15
-                padding: EdgeInsets.only(
-                    left: horizantalPaddingBy30,
-                    right: horizantalPaddingBy30,
-                    top: 1.88 * SizeConfig.heightMultiplier),
-                child: new Divider(color: new Color(0xff272626)),
+              new Column(
+                children: <Widget>[
+                  new Header(),
+                  new ArtilleryButtons(),
+                  new Padding(
+                    // left:30.0, right: 30.0,top: 15
+                    padding: EdgeInsets.only(
+                        left: horizantalPaddingBy30,
+                        right: horizantalPaddingBy30,
+                        top: 1.88 * SizeConfig.heightMultiplier),
+                    child: new Divider(color: new Color(0xff272626)),
+                  ),
+                  new EnemyDetails(),
+                  new FriendlyDetails(),
+                  new Padding(
+                    padding: EdgeInsets.only(
+                        // left:30.0, right: 30.0,top: 20
+                        left: horizantalPaddingBy30,
+                        right: horizantalPaddingBy30,
+                        top: 2.50 * SizeConfig.heightMultiplier),
+                    child: new Divider(color: new Color(0xff272626)),
+                  ),
+                  new OutputDetails()
+                ],
               ),
-              new EnemyDetails(),
-              new FriendlyDetails(),
-              new Padding(
-                padding: EdgeInsets.only(
-                    // left:30.0, right: 30.0,top: 20
-                    left: horizantalPaddingBy30,
-                    right: horizantalPaddingBy30,
-                    top: 2.50 * SizeConfig.heightMultiplier),
-                child: new Divider(color: new Color(0xff272626)),
-              ),
-              new OutputDetails()
             ],
           ),
-        )
+        ))
       ],
     );
   }

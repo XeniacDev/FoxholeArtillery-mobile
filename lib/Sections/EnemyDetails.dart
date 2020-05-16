@@ -1,6 +1,5 @@
 import "package:flutter/material.dart";
 import 'package:flutter/services.dart';
-import 'package:foxhole_artillery/Global/Global.dart';
 import 'package:foxhole_artillery/Theme/SizeConfig.dart';
 
 class EnemyDetails extends StatefulWidget {
