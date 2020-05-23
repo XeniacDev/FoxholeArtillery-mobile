@@ -25,10 +25,10 @@ Simply click which weapon you're using then input the dist/azm from yourself to 
 ## Screenshots
 <center>
 <div>
-  <img src="https://lh3.googleusercontent.com/urdqHPiLRxfYZ6NHS70f9xGzM4PlgZG6RGZHlvN3iFn0Uq_RuqdoCY-4Wa5Q5E5uFCc=w1920-h937-rw" width="208" height="368" inline-block;/>
-  <img src="https://lh3.googleusercontent.com/t5KRYfvWWyq4hCPGB1mdfhxBWJbOUT-qKuTpvZ4Q3_wzcpRiniKMb33Ro01iUq4FvC9t=w1920-h937-rw" width="208" height="368" inline-block/>
-  <img src="https://lh3.googleusercontent.com/mSxTJm0xIQYVCC1BnYWhBVNqPUBC0L_HP9t2DJIHtiC6ErYZXhKM8B3e_vRA5sl8XC4=w1920-h937-rw" width="208" height="368" inline-block/>
-  <img src="https://lh3.googleusercontent.com/f2fzzjlNjhKckWzvaOx5urh_sapnX5Qbc_pNfQxQK-t4wLe9w-umz6lYkNyr9H5tyUQ=w1920-h937-rw" width="208" height="368" inline-block;/>
+  <img https://lh3.googleusercontent.com/zsnXiwUp65IC4LVRs_TcoRrhcD1h331vyQje99b2eg0A_JY4hLPiEUHctdSMGkajzQ=w1667-h801-rw" width="208" height="368" inline-block;/>
+  <img src="https://lh3.googleusercontent.com/NgWCPYEkYN_NETfJHxGfCqU233Zysa2jNbylymFAACus3GP8ovspFPqRP4BQlXSpLPU=w1667-h801-rw" width="208" height="368" inline-block/>
+  <img src="https://lh3.googleusercontent.com/L8diPh_-xcQi6PlKmgQeot5u8Lj1SYLD7VQ-RzhZYkPR9mZvT7Gg2BSWqm_aGlUzSPDb=w1667-h801-rw" width="208" height="368" inline-block/>
+  <img src="https://lh3.googleusercontent.com/0cdpDwJkPugLc2n1d_ZPPoyuFq_R2QFBDt32C3v1SK01258aLUm0yGm0XpAVuxS3Q9WB=w1667-h801-rw" width="208" height="368" inline-block;/>
 <div/>
 <center/>
 
