@@ -25,7 +25,7 @@ Simply click which weapon you're using then input the dist/azm from yourself to 
 ## Screenshots
 <center>
 <div>
-  <img https://lh3.googleusercontent.com/zsnXiwUp65IC4LVRs_TcoRrhcD1h331vyQje99b2eg0A_JY4hLPiEUHctdSMGkajzQ=w1667-h801-rw" width="208" height="368" inline-block;/>
+  <img src="https://lh3.googleusercontent.com/zsnXiwUp65IC4LVRs_TcoRrhcD1h331vyQje99b2eg0A_JY4hLPiEUHctdSMGkajzQ=w1667-h801-rw" width="208" height="368" inline-block;/>
   <img src="https://lh3.googleusercontent.com/NgWCPYEkYN_NETfJHxGfCqU233Zysa2jNbylymFAACus3GP8ovspFPqRP4BQlXSpLPU=w1667-h801-rw" width="208" height="368" inline-block/>
   <img src="https://lh3.googleusercontent.com/L8diPh_-xcQi6PlKmgQeot5u8Lj1SYLD7VQ-RzhZYkPR9mZvT7Gg2BSWqm_aGlUzSPDb=w1667-h801-rw" width="208" height="368" inline-block/>
   <img src="https://lh3.googleusercontent.com/0cdpDwJkPugLc2n1d_ZPPoyuFq_R2QFBDt32C3v1SK01258aLUm0yGm0XpAVuxS3Q9WB=w1667-h801-rw" width="208" height="368" inline-block;/>
