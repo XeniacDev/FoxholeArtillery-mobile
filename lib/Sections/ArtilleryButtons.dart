@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foxhole_artillery/Global/Global.dart';
+import 'package:foxhole_artillery/Theme/SizeConfig.dart';
 
 class ArtilleryButtons extends StatefulWidget {
   @override
@@ -7,16 +8,19 @@ class ArtilleryButtons extends StatefulWidget {
 }
 
 class ArtilleryButtonsState extends State<ArtilleryButtons> {
+  double horizantalPaddingBy30 = 7.29 * SizeConfig.imageSizeMultiplier; // 30
+  double buttonContainerWidth = 17.03 * SizeConfig.imageSizeMultiplier; // 70
+  double buttonContainerHeight = 8.78 * SizeConfig.heightMultiplier; // 70
+  double buttonImageWidth = 12.77 * SizeConfig.imageSizeMultiplier; // 52.5
+  double buttonImageHeight = 6.58 * SizeConfig.heightMultiplier; // 52.5
   //widget class for artillery types buttons
-  //TODO: Use MediaQuery and Use Color Class
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 30.0, right: 30.0),
+      padding: EdgeInsets.symmetric(horizontal: horizantalPaddingBy30), // 30
       child: new Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-
           //Field Artillery Button
           new GestureDetector(
             onTap: () {
@@ -25,40 +29,40 @@ class ArtilleryButtonsState extends State<ArtilleryButtons> {
             child: new Container(
               alignment: Alignment.center,
               decoration: new BoxDecoration(
-                //to change the bgColor if selected or not.
+                  //to change the bgColor if selected or not.
                   color: Global.artilleryItems["Field Artillery"]
                       ? new Color(0xffFFA32B)
                       : new Color(0xff121212),
                   borderRadius: BorderRadius.all(Radius.circular(5))),
-              width: 70,
-              height: 70,
+              width: buttonContainerWidth, // 70
+              height: buttonContainerHeight, // 70
               child: new Container(
-                height: 52.5,
-                width: 52.5,
+                width: buttonImageWidth, // 52.5
+                height: buttonImageHeight, // 52.5
                 child: new Image.asset("assets/images/fieldArtillery_icon.png"),
               ),
             ),
           ),
 
-          //GunShip Button
+          //Gunboat Button
           new GestureDetector(
             onTap: () {
-              Global.handleSelection("GunShip");
+              Global.handleSelection("Gunboat");
             },
             child: new Container(
                 alignment: Alignment.center,
                 decoration: new BoxDecoration(
-                  //to change the bgColor if selected or not.
-                    color: Global.artilleryItems["GunShip"]
+                    //to change the bgColor if selected or not.
+                    color: Global.artilleryItems["Gunboat"]
                         ? new Color(0xffFFA32B)
                         : new Color(0xff121212),
                     borderRadius: BorderRadius.all(Radius.circular(5))),
-                width: 70,
-                height: 70,
-                child: Container(
-                    width: 52.5,
-                    height: 52.5,
-                    child: new Image.asset("assets/images/gunship_icon.png"))),
+                width: buttonContainerWidth, // 70
+                height: buttonContainerHeight, // 70
+                child: new Container(
+                    width: buttonImageWidth, // 52.5
+                    height: buttonImageHeight, // 52.5
+                    child: new Image.asset("assets/images/gunboat_icon.png"))),
           ),
 
           ////Howitzer Button
@@ -69,17 +73,17 @@ class ArtilleryButtonsState extends State<ArtilleryButtons> {
             child: new Container(
               alignment: Alignment.center,
               decoration: new BoxDecoration(
-                //to change the bgColor if selected or not.
+                  //to change the bgColor if selected or not.
                   color: Global.artilleryItems["Howitzer"]
                       ? new Color(0xffFFA32B)
                       : new Color(0xff121212),
                   borderRadius: BorderRadius.all(Radius.circular(5))),
-              width: 70,
-              height: 70,
-              child: Container(
+              width: buttonContainerWidth, // 70
+              height: buttonContainerHeight, // 70
+              child: new Container(
+                width: buttonImageWidth, // 52.5
+                height: buttonImageHeight, // 52.5
                 child: new Image.asset("assets/images/howitzerKit_icon.png"),
-                width: 52.5,
-                height: 52.5,
               ),
             ),
           ),
@@ -92,17 +96,17 @@ class ArtilleryButtonsState extends State<ArtilleryButtons> {
             child: new Container(
               alignment: Alignment.center,
               decoration: new BoxDecoration(
-                //to change the bgColor if selected or not.
+                  //to change the bgColor if selected or not.
                   color: Global.artilleryItems["Mortar"]
                       ? new Color(0xffFFA32B)
                       : new Color(0xff121212),
                   borderRadius: BorderRadius.all(Radius.circular(5))),
-              width: 70,
-              height: 70,
-              child: Container(
+              width: buttonContainerWidth, // 70
+              height: buttonContainerHeight, // 70
+              child: new Container(
+                width: buttonImageWidth, // 52.5
+                height: buttonImageHeight, // 52.5
                 child: new Image.asset("assets/images/mortar_icon.png"),
-                width: 52.5,
-                height: 52.5,
               ),
             ),
           ),

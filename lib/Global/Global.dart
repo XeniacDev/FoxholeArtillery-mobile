@@ -16,7 +16,7 @@ class Global {
   //list of ArtilleryType
   static Map<String, bool> artilleryItems = {
     "Field Artillery": false,
-    "GunShip": false,
+    "Gunboat": false,
     "Howitzer": false,
     "Mortar": false
   };
