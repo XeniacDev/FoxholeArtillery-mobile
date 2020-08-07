@@ -1,3 +1,5 @@
+![GitHub](https://img.shields.io/github/license/xeniacdev/FoxholeArtillery-mobile?style=flat-square) ![GitHub stars](https://img.shields.io/github/stars/xeniacdev/FoxholeArtillery-mobile?style=flat-square) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/xeniacdev/FoxholeArtillery-mobile?style=flat-square) ![GitHub All Releases](https://img.shields.io/github/downloads/xeniacdev/FoxholeArtillery-mobile/total?style=flat-square)
+
 <img alt="Icon" src="assets/images/foxhole_icon.png?raw=true" width="200" height="200" align="left" hspace="1" vspace="1">
 
 # Foxhole artillery
